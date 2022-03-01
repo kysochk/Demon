@@ -23,9 +23,11 @@ namespace Demon
         public MainWindow()
         {
             InitializeComponent();
-            LoadPages.MainFrame = FrameMain;
-            FrameMain.Navigate(new ServicePage());
-            BaseConnect.BaseModel = new Entities();
+            BaseConnect.BaseModel = new demonEntities();
+            cmbgender.ItemsSource = BaseConnect.BaseModel.Gender.ToList();
+            cmbgender.SelectedValuePath = "Id_gender";
+            cmbgender.DisplayMemberPath = "Gender1";
+           
         }
     }
 }
