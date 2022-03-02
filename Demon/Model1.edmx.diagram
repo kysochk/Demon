@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="bde0e0784ed447be8e13f8b605cca29d" Name="Diagram1" ZoomLevel="82">
-        <EntityTypeShape EntityType="demonModel.Client" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="demonModel.Gender" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="demonModel.Service" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="demonModel.ServiceClient" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
-        <AssociationConnector Association="demonModel.FK_Client_Gender" ManuallyRouted="false" />
-        <AssociationConnector Association="demonModel.FK_ServiceClient_Client" ManuallyRouted="false" />
-        <AssociationConnector Association="demonModel.FK_ServiceClient_Service" ManuallyRouted="false" />
+      <Diagram DiagramId="07e03cc1ee634e5d940502be4eeb93cc" Name="Diagram1">
+        <EntityTypeShape EntityType="P_KlimochkinaModel.Client" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="P_KlimochkinaModel.Gender" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="P_KlimochkinaModel.Service" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="P_KlimochkinaModel.ServiceClient" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="P_KlimochkinaModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="P_KlimochkinaModel.FK_ServiceClient_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="P_KlimochkinaModel.FK_ServiceClient_Service" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

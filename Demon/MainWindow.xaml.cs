@@ -23,10 +23,7 @@ namespace Demon
         public MainWindow()
         {
             InitializeComponent();
-            BaseConnect.BaseModel = new demonEntities();
-            cmbgender.ItemsSource = BaseConnect.BaseModel.Gender.ToList();
-            cmbgender.SelectedValuePath = "Id_gender";
-            cmbgender.DisplayMemberPath = "Gender1";
+           
            
         }
     }

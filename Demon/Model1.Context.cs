@@ -13,10 +13,10 @@ namespace Demon
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class demonEntities : DbContext
+    public partial class Entities : DbContext
     {
-        public demonEntities()
-            : base("name=demonEntities")
+        public Entities()
+            : base("name=Entities")
         {
         }
     

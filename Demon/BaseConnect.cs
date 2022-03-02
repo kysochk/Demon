@@ -8,6 +8,6 @@ namespace Demon
 {
     class BaseConnect
     {
-        public static demonEntities BaseModel;
+        public static Entities BaseModel;
     }
 }
