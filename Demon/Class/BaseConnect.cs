@@ -8,6 +8,6 @@ namespace Demon
 {
     class BaseConnect
     {
-        public static Entities BaseModel;
+        public static Entities BaseModel; //подключение к базе для выгрузки данных
     }
 }

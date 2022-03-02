@@ -23,8 +23,9 @@ namespace Demon
         public MainWindow()
         {
             InitializeComponent();
-           
-           
+            BaseConnect.BaseModel = new Entities(); //БД
+            PageLoad.MainFrame = FrameMain;//страницы
+
         }
     }
 }
