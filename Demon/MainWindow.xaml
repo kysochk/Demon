@@ -8,24 +8,24 @@
         
         Title="Школа языков Леарн" Height="700" Width="960" 
           WindowStartupLocation="CenterScreen">
-        <Grid >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="70"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="0.5*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200" />
-                <ColumnDefinition Width="9*" />
-            </Grid.ColumnDefinitions>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="168" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
 
-            <DockPanel Grid.ColumnSpan="2" LastChildFill="True">
-                <Image Source="/Logo/school_logo.png" DockPanel.Dock="Left"/>
-                <TextBlock Text="Школа языков Леарн" FontSize ="55" Margin="0,0,0,0.4" Width="826" />
-            </DockPanel>
-            <Image />
-            <Frame x:Name="FrameMain" Grid.Row="1" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden" />
-        </Grid>
+        <DockPanel Grid.ColumnSpan="2" LastChildFill="True" Margin="0,0,-0.4,0.4">
+            <Image Source="/Logo/school_logo.png" DockPanel.Dock="Left"/>
+            <TextBlock Text="Школа языков Леарн" FontSize ="55" Margin="0,0,0,0.4" Width="881" />
+        </DockPanel>
+        <Image Margin="0,0,97,0.4" Height="70" VerticalAlignment="Bottom" />
+        <Frame x:Name="FrameMain" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden" Margin="0,70,-0.4,0" Grid.RowSpan="2" />
+    </Grid>
 
-   
+
 </Window>
