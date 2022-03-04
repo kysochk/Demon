@@ -8,7 +8,7 @@
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
         </Style>
         <Style TargetType="Button">
-            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontFamily"  Value="Comic Sans MS"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="Tb_discount">
             <Setter Property="FontSize" Value="10"/>
