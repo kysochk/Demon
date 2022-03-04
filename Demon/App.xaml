@@ -7,10 +7,12 @@
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
         </Style>
-        <Style TargetType="Button">
+        <Style TargetType="Button" >
             <Setter Property="FontFamily"  Value="Comic Sans MS"/>
+            <Setter Property="Background" Value="#04a0ff"/>
         </Style>
-        <Style TargetType="TextBlock" x:Key="Tb_discount">
+       
+        <Style  TargetType="TextBlock" x:Key="Tb_discount">
             <Setter Property="FontSize" Value="10"/>
         </Style>
     </Application.Resources>
