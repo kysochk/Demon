@@ -14,11 +14,11 @@
 
                     <GroupBox >
                         <StackPanel Orientation="Horizontal" Width="600px" >
-                            <Image x:Name="ImageService" Source="{Binding img}" Height="75px" Width="75px"/>
+                            <Image x:Name="Image" Source="{Binding Image}" Height="75px" Width="75px"/>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock x:Name="NameService" Text="{Binding name_service}"/>
+                                <TextBlock x:Name="NameService" Text="{Binding name_of_the_service}"/>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock x:Name="OldCost" Text="{Binding cost, StringFormat = {}{0:N2}}" TextDecorations="{Binding decor}">
+                                    <TextBlock x:Name="OldCost" Text="{Binding Cost, StringFormat = {}{0:N2}}" TextDecorations="{Binding decor}">
                                     <Run Text=" "/>
                                     </TextBlock>
                                     <TextBlock Text="{Binding newcost, StringFormat = {}{0:N2}}" Visibility="{Binding visible}">
@@ -27,20 +27,20 @@
                                     <TextBlock x:Name="CostService" >
                                 
                                 <Run Text="рублей за"/>
-                                <Run Text="{Binding duration}"/>
+                                <Run Text="{Binding Time_min}"/>
                                 <Run Text=" минут"/>
                                     </TextBlock>
                                 </StackPanel>
 
 
-                                <TextBlock  Text="*скидка " Visibility="{Binding visibleD}" Style="{StaticResource Tb_discount}">
+                                <TextBlock  Text="*скидка " Visibility="{Binding Discount}" Style="{StaticResource Tb_discount}">
                                     <Run Text="{Binding discount, StringFormat = {}{0:P0}}"/>
                                 </TextBlock>
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Button x:Name="EditService" Content="Редактировать"  Uid="{Binding id_service}" Click="EditService_Click" Visibility="{Binding visiblebtn}" Margin="0 0 10 0"/>
-                                    <Button x:Name="DeleteService" Content="Удалить" Uid="{Binding id_service}" Click="DeleteService_Click" Visibility="{Binding visiblebtn}" Margin="0 0 10 0" />
-                                    <Button x:Name="NewZapis" Content="Записать" Uid="{Binding id_service}" Click="NewZapis_Click" Visibility="{Binding visiblebtn}"/>
+                                    <Button x:Name="EditService" Content="Редактировать"  Uid="{Binding Id_service}" Click="EditService_Click" Visibility="{Binding visiblebtn}" Margin="0 0 10 0"/>
+                                    <Button x:Name="DeleteService" Content="Удалить" Uid="{Binding Id_service}" Click="DeleteService_Click" Visibility="{Binding visiblebtn}" Margin="0 0 10 0" />
+                                    <Button x:Name="NewZapis" Content="Записать" Uid="{Binding Id_service}" Click="NewZapis_Click" Visibility="{Binding visiblebtn}"/>
                                 </StackPanel>
                             </StackPanel>
                         </StackPanel>
@@ -64,32 +64,29 @@
             <ColumnDefinition x:Name="ColumnDefMain"  Width="0"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
-            <StackPanel Margin="0,0,0,0.4">
-
-                <Button x:Name="autorizBtn" Content="Авторизироваться" Height="30"  Margin="10 20 10 0" Click="autorizBtn_Click"/>
-            </StackPanel>
+            <StackPanel Margin="0,0,0,0.4"/>
             <GroupBox Header="" Margin="0,0,0,0.4">
                 <StackPanel Orientation="Horizontal" />
             </GroupBox>
-            <GroupBox Header="Поиск по имени" Width="120">
+            <GroupBox Header="Введите имя" Width="201" Margin="0,0,0,0.4">
                 <StackPanel Orientation="Horizontal">
-                    <TextBox x:Name="SearchBarTxt" Width="100" Height="25" Margin="5 0 0 0" TextChanged="SearchBarTxt_TextChanged" FontSize="14"/>
+                    <TextBox x:Name="SearchBarTxt" Width="176" Height="25" Margin="5,12,0,12" TextChanged="SearchBarTxt_TextChanged" FontSize="14"/>
                 </StackPanel>
+            </GroupBox>
+            <GroupBox Header="" Margin="0,0,0,0.4">
+                <StackPanel Orientation="Horizontal" />
             </GroupBox>
             <GroupBox x:Name="AddUsBtn" Header="Добавить услугу" Visibility="Collapsed">
                 <Button x:Name="AddService" Content="Добавить" Uid="{Binding id_service}" Click="AddService_Click" Visibility="{Binding visiblebtn}" Margin="0 0 10 0" Height="30" />
             </GroupBox>
-            <GroupBox x:Name="ZapBtn" Header="Ближайшие записи" Visibility="Collapsed">
+            <GroupBox x:Name="ZapBtn" Header="Ближайшая запись" Visibility="Collapsed">
                 <Button x:Name="NextZap" Content="Записи" Click="NextZap_Click"  Margin="0 0 10 0" Height="30" />
             </GroupBox>
-            <GroupBox Header="" Margin="0,0,0,0.4">
-                <StackPanel Orientation="Horizontal" />
-            </GroupBox>
-            <GroupBox Header="Сортировка" Margin="0,0,0,0.4">
-                <StackPanel Orientation="Horizontal" >
-                    <Button x:Name="CostSortBtn" Content="Цена" Click="Button_Click" Width="100" Height="25" Margin="0,5,0,5" />
-                    <GroupBox Header="Скидке">
-                        <ComboBox x:Name="DiscountCB" SelectionChanged="DiscountCB_SelectionChanged">
+            <GroupBox Header="Сортировка" Margin="0,0,0,0.4" Width="334">
+                <StackPanel Orientation="Horizontal" Margin="0,0,-2,0" >
+                    <Button x:Name="CostSortBtn" Content="Цена" Click="CostSortBtn_Click" Width="130" Height="25" Margin="0,12,0,11" />
+                    <GroupBox Header="Скидка" Width="196" Margin="0,-2,0,2">
+                        <ComboBox x:Name="DiscountCB" SelectionChanged="DiscountCB_SelectionChanged" Height="26" Margin="0,0,-2.4,-0.4" VerticalAlignment="Top">
                             <ComboBoxItem Content="Все"/>
                             <ComboBoxItem Content="0% - 5%"/>
                             <ComboBoxItem Content="5% - 15%"/>

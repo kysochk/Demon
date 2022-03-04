@@ -8,6 +8,7 @@
         
         Title="Школа языков Леарн" Height="700" Width="960" 
           WindowStartupLocation="CenterScreen">
+    
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
@@ -25,6 +26,7 @@
         </DockPanel>
         <Image Margin="0,0,97,0.4" Height="70" VerticalAlignment="Bottom" />
         <Frame x:Name="FrameMain" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden" Margin="0,70,-0.4,0" Grid.RowSpan="2" />
+        
     </Grid>
 
 

@@ -20,9 +20,55 @@ namespace Demon
     /// </summary>
     public partial class PageService : Page
     {
+        
         public PageService()
         {
             InitializeComponent();
+        }
+
+        private void EditService_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteService_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NewZapis_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void autorizBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddService_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NextZap_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CostSortBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SearchBarTxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void DiscountCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
