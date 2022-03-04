@@ -20,10 +20,15 @@ namespace Demon
     /// </summary>
     public partial class PageService : Page
     {
-        
+        LoadList LoadS;
+        List<Service> ls;
         public PageService()
         {
             InitializeComponent();
+            ServiceList.ItemsSource = LoadS.service;
+            ls = LoadS.service;
+            DiscountCB.SelectedIndex = 0;
+           
         }
 
         private void EditService_Click(object sender, RoutedEventArgs e)

@@ -12,11 +12,31 @@ namespace Demon
         public List<Client> clients;
         public LoadList()
         {
-           
+            service = skidka(); //вызывает метод подсчета скидки и формирования листа на вывод
+            clients = BaseConnect.BaseModel.Client.ToList(); //заполняем лист клиентами
         }
         List<Service> skidka()
-        { 
-        
+        {
+            service = BaseConnect.BaseModel.Service.ToList();
+
+            foreach (Service s in service)
+            {
+                s.newcost = s.Cost;
+                if (s.Discount > 0)
+                {
+                    s.Decor = "Strikethrough";
+                    s.green = "LightGreen";
+                    s.newcost = Convert.ToDecimal(Convert.ToDouble(s.Cost) - Convert.ToDouble(s.Cost) * s.Discount);
+
+                }
+                else
+                {
+                    s.green = "none";
+                }
+
+            }
+
+            return service;
         }
     }
 }
