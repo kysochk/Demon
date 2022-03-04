@@ -81,6 +81,7 @@
     <Compile Include="PageService.xaml.cs">
       <DependentUpon>PageService.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Class\PartialClassService.cs" />
     <Compile Include="Service.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

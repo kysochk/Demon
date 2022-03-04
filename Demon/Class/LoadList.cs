@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace Demon
 {
-    class LoadList
+    public class LoadList
     {
         public List<Service> service;
         public List<Client> clients;
+        public LoadList()
+        {
+           
+        }
+        List<Service> skidka()
+        { 
+        
+        }
     }
 }
