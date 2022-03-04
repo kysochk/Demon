@@ -20,7 +20,7 @@ namespace Demon
     /// </summary>
     public partial class PageService : Page
     {
-        LoadList LoadS;
+        LoadList LoadS = new LoadList();
         List<Service> ls;
         public PageService()
         {
