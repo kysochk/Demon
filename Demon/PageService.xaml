@@ -16,7 +16,7 @@
                         <StackPanel Orientation="Horizontal" Width="600px" >
                             <Image x:Name="Image" Source="{Binding Image}" Height="75px" Width="75px"/>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock x:Name="NameService" Text="{Binding name_of_the_service}"/>
+                                <TextBlock x:Name="NameService" Text="{Binding Name_of_the_service}"/>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock x:Name="OldCost" Text="{Binding Cost, StringFormat = {}{0:N2}}" TextDecorations="{Binding decor}">
                                     <Run Text=" "/>
@@ -34,7 +34,7 @@
 
 
                                 <TextBlock  Text="*скидка " Visibility="{Binding Discount}" Style="{StaticResource Tb_discount}">
-                                    <Run Text="{Binding discount, StringFormat = {}{0:P0}}"/>
+                                    <Run Text="{Binding Discount, StringFormat = {}{0:P0}}"/>
                                 </TextBlock>
 
                                 <StackPanel Orientation="Horizontal">

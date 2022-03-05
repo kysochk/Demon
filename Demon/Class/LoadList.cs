@@ -18,12 +18,13 @@ namespace Demon
         List<Service> skidka()
         {
             service = BaseConnect.BaseModel.Service.ToList();
-
             foreach (Service s in service)
             {
                 s.newcost = s.Cost;
                 if (s.Discount > 0)
                 {
+                    s.Visible = "Visible";
+                    s.VisibleD = "Visible";
                     s.Decor = "Strikethrough";
                     s.green = "LightGreen";
                     s.newcost = Convert.ToDecimal(Convert.ToDouble(s.Cost) - Convert.ToDouble(s.Cost) * s.Discount);
@@ -32,11 +33,10 @@ namespace Demon
                 else
                 {
                     s.green = "none";
+                    s.Visible = "Collapsed";
+                    s.VisibleD = "Hidden";
                 }
-
             }
-
-            return service;
         }
     }
 }
