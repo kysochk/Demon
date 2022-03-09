@@ -20,9 +20,29 @@ namespace Demon
     /// </summary>
     public partial class Avtorizacia : Page
     {
+        
         public Avtorizacia()
         {
             InitializeComponent();
+
+        }
+
+        private void Vhod_Click(object sender, RoutedEventArgs e)
+        {
+            if (Nametxt.Text == "0000")
+            {
+                MessageBox.Show("Вы вошли как администраторатор.", "Авторизация прошла успешно", MessageBoxButton.OK, MessageBoxImage.Information);
+                PageLoad.MainFrame.Navigate(new PageService());
+            }
+            else
+            {
+                MessageBox.Show("Пароль неверный\nПопробуйте снова", "Ошибка авторизации", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void VhodGost_Click(object sender, RoutedEventArgs e)
+        {
+          
         }
     }
 }

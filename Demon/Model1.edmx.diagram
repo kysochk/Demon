@@ -12,6 +12,7 @@
         <AssociationConnector Association="P_KlimochkinaModel.FK_Client_Gender" ManuallyRouted="false" />
         <AssociationConnector Association="P_KlimochkinaModel.FK_ServiceClient_Client" ManuallyRouted="false" />
         <AssociationConnector Association="P_KlimochkinaModel.FK_ServiceClient_Service" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="P_KlimochkinaModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -9,6 +9,13 @@
       Title="Avtorizacia">
 
     <Grid>
-        
+        <GroupBox Header="Авторизация" Margin="295,122,305,127.6">
+            <StackPanel VerticalAlignment="Center">
+                <TextBox x:Name="Nametxt" Width="auto" Height="25px" Margin=" 0 0 0 10"/>
+                <Button x:Name="Vhod" Content="Войти" Margin="5" Click="Vhod_Click" />
+                <Button x:Name="VhodGost" Content="Войти как гость" Margin="5 0 5 0" Click="VhodGost_Click"/>
+            </StackPanel>
+        </GroupBox>
+
     </Grid>
 </Page>

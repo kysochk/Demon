@@ -29,5 +29,6 @@ namespace Demon
         public virtual DbSet<Gender> Gender { get; set; }
         public virtual DbSet<Service> Service { get; set; }
         public virtual DbSet<ServiceClient> ServiceClient { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

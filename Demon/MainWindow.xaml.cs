@@ -26,7 +26,7 @@ namespace Demon
             BaseConnect.BaseModel = new Entities1(); //БД
             PageLoad.MainFrame = FrameMain;//страницы
             FrameMain.Navigate(new PageService());
-
+            
         }
     }
 }

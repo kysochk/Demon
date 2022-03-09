@@ -37,6 +37,7 @@ namespace Demon
                     s.VisibleD = "Hidden";
                 }
             }
+            return service;
         }
     }
 }
