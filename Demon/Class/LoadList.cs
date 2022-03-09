@@ -19,9 +19,10 @@ namespace Demon
         int flag = 0;
         public LoadList(int i)
         {
+            flag = 1;
             service = skidka(); //вызывает метод подсчета скидки и формирования листа на вывод
             clients = BaseConnect.BaseModel.Client.ToList(); //заполняем лист клиентами
-            flag = 1;
+
 
         }
         List<Service> skidka()
@@ -29,6 +30,14 @@ namespace Demon
             service = BaseConnect.BaseModel.Service.ToList();
             foreach (Service s in service)
             {
+                if (flag == 1)
+                {
+                    s.visiblebtn = "Visible";
+                }
+                else
+                {
+                    s.visiblebtn = "Collapsed";
+                }
                 s.newcost = s.Cost;
                 if (s.Discount > 0)
                 {

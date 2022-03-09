@@ -42,7 +42,8 @@ namespace Demon
 
         private void VhodGost_Click(object sender, RoutedEventArgs e)
         {
-          
+            MessageBox.Show("Вы вошли как гость.", "Зачем оно вам надо...", MessageBoxButton.OK, MessageBoxImage.Information);
+            PageLoad.MainFrame.Navigate(new PageService());
         }
     }
 }
