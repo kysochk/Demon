@@ -14,6 +14,15 @@ namespace Demon
         {
             service = skidka(); //вызывает метод подсчета скидки и формирования листа на вывод
             clients = BaseConnect.BaseModel.Client.ToList(); //заполняем лист клиентами
+
+        }
+        int flag = 0;
+        public LoadList(int i)
+        {
+            service = skidka(); //вызывает метод подсчета скидки и формирования листа на вывод
+            clients = BaseConnect.BaseModel.Client.ToList(); //заполняем лист клиентами
+            flag = 1;
+
         }
         List<Service> skidka()
         {
@@ -38,6 +47,7 @@ namespace Demon
                 }
             }
             return service;
+
         }
     }
 }
