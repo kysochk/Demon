@@ -19,15 +19,27 @@ namespace Demon
     /// Логика взаимодействия для PageService.xaml
     /// </summary>
     public partial class PageService : Page
+
     {
         LoadList LoadS = new LoadList();
         List<Service> ls;
+        public PageService(int i)
+        {
+            InitializeComponent();
+            LoadS = new LoadList(1);
+            ServiceList.ItemsSource = LoadS.service;
+            ls = LoadS.service;
+            DiscountCB.SelectedIndex = 0;
+
+        }
+        
         public PageService()
         {
             InitializeComponent();
             ServiceList.ItemsSource = LoadS.service;
             ls = LoadS.service;
             DiscountCB.SelectedIndex = 0;
+
            
         }
 

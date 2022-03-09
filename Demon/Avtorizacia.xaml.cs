@@ -32,7 +32,7 @@ namespace Demon
             if (Nametxt.Text == "0000")
             {
                 MessageBox.Show("Вы вошли как администраторатор.", "Авторизация прошла успешно", MessageBoxButton.OK, MessageBoxImage.Information);
-                PageLoad.MainFrame.Navigate(new PageService());
+                PageLoad.MainFrame.Navigate(new PageService(1));
             }
             else
             {
